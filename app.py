@@ -18,7 +18,8 @@ class SkinCancerModel(nn.Module):
 # 🧠 تحميل الحالة المدربة
 model = SkinCancerModel()
 
-model.load_state_dict(torch.load(r"C:\Users\ahmad\Desktop\skin cancer app\model.pth", map_location=torch.device('cpu')))
+model.load_state_dict(torch.load("model.pth", map_location=torch.device('cpu')))
+
 
 model.eval()
 
